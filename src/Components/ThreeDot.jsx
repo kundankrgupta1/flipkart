@@ -19,7 +19,7 @@ const ThreeDot = () => {
 			>
 				<PiDotsThreeVerticalBold />
 			</button>
-			<div className={`absolute top-14 rounded-b-lg left-[81.8%] shadow-[0px_5px_15px_rgba(0,0,0,0.35)] bg-white ${tdVisible ? 'block' : 'hidden'}`}>
+			<div className={`absolute top-14 rounded-b-lg left-[81.8%] z-10 shadow-[0px_5px_15px_rgba(0,0,0,0.35)] bg-white ${tdVisible ? 'block' : 'hidden'}`}>
 				{data.map((e, ind) =>
 					<div key={ind} className="flex items-center m-4 gap-3 text-sm">
 						<img src={e.icon} alt={e.text} className="h-4 w-4" />
