@@ -13,13 +13,13 @@ const ThreeDot = () => {
 
 	return (
 		<>
-			<button className="relative p-2 rounded-md hover:p-2 hover:border-2 hover:rounded-md"
+			<button className="relative p-2 rounded-md hover:p-2 hover:border-2 hover:rounded-md group"
 				onMouseEnter={() => setTdVisible(!tdVisible)}
 				onMouseLeave={() => setTdVisible(!tdVisible)}
 			>
 				<PiDotsThreeVerticalBold />
 			</button>
-			<div className={`absolute top-14 rounded-b-lg left-[81.8%] z-10 shadow-[0px_5px_15px_rgba(0,0,0,0.35)] bg-white ${tdVisible ? 'block' : 'hidden'}`}>
+			<div className={`absolute top-14 rounded-b-lg left-[81.8%] z-10 shadow-[0px_5px_15px_rgba(0,0,0,0.35)] bg-white ${tdVisible ? 'block' : 'hidden'} group-hover:block hover:block `}>
 				{data.map((e, ind) =>
 					<div key={ind} className="flex items-center m-4 gap-3 text-sm">
 						<img src={e.icon} alt={e.text} className="h-4 w-4" />

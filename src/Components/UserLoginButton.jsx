@@ -21,7 +21,7 @@ const UserLoginButton = () => {
 				Login
 				<IoIosArrowDown />
 			</button>
-			<div className={`max-w-96 rounded-b-lg z-10 bg-white shadow-[0px_5px_15px_rgba(0,0,0,0.35)] absolute top-14 ${visible ? 'block' : 'hidden'} `}>
+			<div className={`max-w-96 rounded-b-lg z-10 bg-white shadow-[0px_5px_15px_rgba(0,0,0,0.35)] absolute top-14 ${visible ? 'block' : 'hidden'} group-hover:block hover:block`}>
 				<div className="flex gap-10 p-3">
 					<p>New Customer?</p><p className="text-blue-800 font-semibold">Sign Up</p>
 				</div>
